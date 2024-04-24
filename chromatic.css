@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --color-principal: #c355f5;
+  --color-secundario: #222222;
+  --color-1: #ffffff;
+}
+
+.dev {
+  border: 1px solid yellow;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  background-color: var(--color-secundario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+}
+header img {
+  height: 80px;
+}
+nav {
+  background-color: var(--color-1);
+  width: 100%;
+  height: 80px;
+}
+nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li {
+  height: 60%;
+  width: 15%;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 25px;
+  transition: 0.1s;
+}
+nav ul li:hover {
+  background-color: var(--color-principal);
+  color: var(--color-1);
+}
+
+nav ul li:hover > a {
+  color: var(--color-1);
+}
+nav ul li a {
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: var(--color-secundario);
+}
+.home {
+  background-color: var(--color-secundario);
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-1);
+  padding: 15px;
+}
+.home span {
+  font-size: 45px;
+  text-align: center;
+}
+.home button {
+  font-size: 36px;
+  background-color: var(--color-principal);
+  color: var(--color-1);
+  height: 60px;
+  width: 300px;
+  margin-top: 35px;
+  transition: 0.25s;
+}
+.home button:hover {
+  cursor: pointer;
+  font-size: 38px;
+  height: 65px;
+  width: 305px;
+  transition: 0.1s;
+}
+.home button:active {
+  cursor: pointer;
+  font-size: 36px;
+  height: 60px;
+  width: 300px;
+}
