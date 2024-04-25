@@ -4,25 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/chromatic.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/primeflex@latest/primeflex.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header><img src="/Logo.png" alt="chromatic_logo" /></header>
-    <nav>
+    <header><img src="/assets/Logo.png" alt="chromatic_logo" /></header>
+    <nav id="navbar">
       <ul>
         <li><a href="#">INICIO</a></li>
-        <li><a href="#">NOSOTROS</a></li>
-        <li><a href="#">SERVICIOS</a></li>
-        <li><a href="#">PROYECTOS</a></li>
+        <li><a href="#nosotros">NOSOTROS</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li><a href="#proyectos">PROYECTOS</a></li>
         <li><a href="#">CONTACTO</a></li>
       </ul>
     </nav>
-    <section class="home">
+    <section id="home" class="home">
       <span>CONSTRUYAMOS JUNTOS <br />UNA MARCA INOLVIDABLE</span>
       <button>Contactanos</button>
     </section>
-    <section class="nosotros">
-      <div class="nosotros-info">
+    <section id="nosotros" class="nosotros grid">
+      <div
+        class="nosotros-info flex-order-1 sm:flex-order-0 col-12 sm:col-8 p-5"
+      >
         <h2>Nosotros</h2>
         <p>
           Somos un grupo de apasionados por eI diseño gráfico, la comunicación y
@@ -31,16 +37,80 @@
           negocio a través de soluciones creativas e innovadoras.
         </p>
       </div>
-      <div class="nosotros-content">
-        <img src="/icono.png" alt="chromatic_icon" />
+      <div
+        class="nosotros-content flex-order-0 sm:flex-order-1 col-12 sm:col-4 p-8 md:p-6 sm:p-0"
+      >
+        <img src="/assets/icono.png" alt="chromatic_icon" />
       </div>
     </section>
     <div class="divider"></div>
-    <section class="servicios">
-      <h2>SERVICIOS</h2>
-      <div class="servicios-content">
-        
+    <section id="servicios" class="servicios h-full md:h-auto">
+      <h2 class="mb-5">SERVICIOS</h2>
+      <div class="servicios-content h-full grid p-3">
+        <div class="servicios-content-card col-12 sm:col-6 p-4">
+          <div
+            class="servicios-content-item flex align-items-center justify-content-center"
+          >
+            <p>IDENTIDAD DE MARCA</p>
+          </div>
+        </div>
+        <div class="servicios-content-card col-12 sm:col-6 p-4">
+          <div
+            class="servicios-content-item flex align-items-center justify-content-center"
+          >
+            <p>DISEÑO WEBSITE</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="stats"
+      class="stats flex align-items-center justify-content-center"
+    >
+      <div class="stats-gal grid p-6">
+        <div
+          class="stats-gal-item col-12 sm:col-6 md:col-4 flex align-items-center justify-content-center flex-column"
+        >
+          <span>20+</span>
+          <p>Marcas en distintas industrias que confiaron en Chromatic</p>
+        </div>
+        <div
+          class="stats-gal-item col-12 sm:col-6 md:col-4 flex align-items-center justify-content-center flex-column"
+        >
+          <span>2+</span>
+          <p>Años de experiencia trabajando en crear diseños increibles</p>
+        </div>
+
+        <div
+          class="stats-gal-item col-12 sm:col-12 md:col-4 flex align-items-center justify-content-center flex-column"
+        >
+          <span>200+</span>
+          <p>
+            Personas que nos siguen y pertenecen a nuestra comunidad de
+            creativos
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="proyectos" class="proyectos h-full md:h-auto">
+      <h2 class="py-5">PROYECTOS</h2>
+      <div class="servicios-content h-full grid p-3">
+        <div class="servicios-content-card col-12 sm:col-6 p-4">
+          <div
+            class="servicios-content-item flex align-items-center justify-content-center"
+          >
+            <p>IDENTIDAD DE MARCA</p>
+          </div>
+        </div>
+        <div class="servicios-content-card col-12 sm:col-6 p-4">
+          <div
+            class="servicios-content-item flex align-items-center justify-content-center"
+          >
+            <p>DISEÑO WEBSITE</p>
+          </div>
+        </div>
       </div>
     </section>
   </body>
+  <script src="/scripts.js"></script>
 </html>
